@@ -24,48 +24,44 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
  ```
 /*
 Program to implement a variable and operators using Java
-Developed by: Jansi rani A A
-RegisterNumber: 212224040130
+Developed by: Jansi rani A A 
+RegisterNumber:  212224040130
 */
 ```
 
 ## Sourcecode.java:
 
-
-```
-import java.util.Scanner;
-
-public class ExamRoomAllotment {
-    public static void main(String[] args) {
-     
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        if(n%3==0 &&n%5==0)
+```java
+import java.util.*;
+public class Demo{
+    public static void main(String[] args)
+    {
+        Scanner input  = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        if(a <  50 && a <  b)
         {
-            System.out.print("Skipped");
-        }
-        else if(n%3==0)
-        {
-            System.out.print("Beware!");
-        }
-        else if(n%5==0)
-        {
-            System.out.print("Blessings!");
+            System.out.print("true");
         }
         else
         {
-            System.out.print("Floor "+n);
+            System.out.print("false");
         }
     }
 }
- 
-
-
 ```
-
 
 ## OUTPUT:
 
+```
+Input    Expected   Got
+
+23       true       true
+34
+
+124      false      false
+23
+```
 
 
 ## RESULT:
