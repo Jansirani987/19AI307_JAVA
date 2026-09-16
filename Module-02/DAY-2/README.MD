@@ -32,31 +32,35 @@ RegisterNumber:  212224040130
 ```
 
 ## Sourcecode.java:
-```
 
-import java.util.Scanner;
-class prog {
-    public static void modifyValue(int num) {
-        num = num + 10;
-        System.out.println("Inside method: " + num);
+```java
+public class A
+{ 
+    private void display() 
+    { 
+        int a=8,b=9;
+        System.out.println(a+b); 
     }
-
-    public static void main(String[] args) {
- Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        modifyValue(x);
-        System.out.println("Outside method: " + x);
+    public static void main(String args[])
+    {
+        A obj= new A();
+        obj.display();
     }
 }
 
-
 ```
 
+
 ## OUTPUT:
+
+```
+Expected    Got 
+
+17          17
+```
 
 
 
 ## RESULT:
 Thus the java program to display the addition number using private modifiers only was executed successfully.
-
 
